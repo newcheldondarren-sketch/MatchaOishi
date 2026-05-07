@@ -1,0 +1,218 @@
+/* Reset & Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f1;
+    color: #333;
+}
+
+/* Header & Nav */
+header {
+    background-color: #556b2f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #556b2f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #556b2f;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9edde;
+}
+
+.hero h2 {
+    color: #556b2f;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Layout Selang-Seling (Z-Pattern) */
+.feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.feature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feature-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.feature-img img:hover {
+    transform: scale(1.02);
+}
+
+.feature-desc {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feature-desc h2 {
+    color: #556b2f;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.feature-desc p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Tombol */
+.btn-pesan {
+    display: inline-block;
+    background-color: #556b2f;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-pesan:hover {
+    background-color: #9acd32;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Styling Khusus Halaman Menu */
+.menu-container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.menu-title {
+    color: #556b2f;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.menu-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 20px;
+}
+
+.menu-info h3 {
+    color: #556b2f;
+    margin-bottom: 10px;
+}
+
+.menu-info p {
+    font-size: 0.95rem;
+    color: #666;
+    height: 40px; /* Biar tinggi teks seragam */
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #9acd32;
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    display: block;
+    background-color: #556b2f;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #9acd32;
+}
+
+.menu-img {
+    width: 100%;
+    height: 250px; /* Tingginya kita tambah sedikit biar lebih lega */
+    background-color: #f4f4f4; /* Warna netral untuk mengisi ruang kosong */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-img img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Gunakan contain agar gambar terlihat utuh meskipun sizenya beda */
+    object-fit: contain; 
+    /* Menghilangkan distorsi */
+    width: auto;
+    height: auto;
+}   
