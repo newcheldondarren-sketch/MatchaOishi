@@ -216,3 +216,17 @@ footer {
     width: auto;
     height: auto;
 }   
+
+@media screen and (max-width: 768px) {
+
+
+    /* Tambahan buat halaman menu di HP */
+    .menu-grid {
+        grid-template-columns: 1fr; /* Jadi 1 kolom saja di HP agar gambar besar */
+        padding: 0 10px;
+    }
+    
+    .menu-card {
+        margin-bottom: 20px;
+    }
+}
